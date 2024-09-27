@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="ChainOfResponsibility\Handlers\" />
+    <Folder Include="Command\Commands\" />
+    <Folder Include="Iterator\Iterators\" />
+    <Folder Include="Iterator\Aggregates\" />
+    <Folder Include="Mediator\Vehicles\" />
+    <Folder Include="Observer\Observers\" />
+    <Folder Include="State\Concretions\" />
+    <Folder Include="TemplateMethod\Recipes\" />
+    <Folder Include="Visitor\DataProcessors\" />
+    <Folder Include="Visitor\Visitors\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RealDependencies\RealDependencies.csproj" />
+  </ItemGroup>
+
+</Project>
